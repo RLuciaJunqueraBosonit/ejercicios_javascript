@@ -8,7 +8,13 @@ const arrNames = [
   { id: 5, name: 'Lala' }
 ];
 
-
+//RESPUESTA 1
 const FindMe = arrNames.find(element => element.id === 3);
-
 console.log(FindMe);
+
+//RESPUESTA 2
+const FindMe = arrNames.find(element => {
+  console.log(element);
+  return element.id === 3;
+  });
+  console.log('Found', FindMe);
